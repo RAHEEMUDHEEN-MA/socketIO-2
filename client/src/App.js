@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-import io, { connect } from "socket.io-client";
+import io from "socket.io-client";
 import Chat from "./Chat";
 
 const socket = io.connect("http://localhost:3001");
@@ -36,6 +36,7 @@ function App() {
             onChange={(e) => {
               setRoom(e.target.value);
             }}
+            onKeyPress={(e)=>(e.key==="Enter"&&joinRoom())}
           />
           <button onClick={joinRoom}>Join</button>
         </div>

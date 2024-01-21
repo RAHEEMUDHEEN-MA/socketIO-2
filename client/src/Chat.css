@@ -2,52 +2,110 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .chat_main{
     /* background-color: antiquewhite; */
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 400px;
-    width: 250px;
+    /* border: 1px solid black; */
+    /* background-color: aliceblue; */
+    box-shadow: 1px 1px 12px rgba(128, 128, 128, 0.605);
+    border-radius: 7px;
+    width: 300px;
     margin: auto;
     margin-top: 70px;
 }
 
 .chat_header{
-    color: white;
+    color: rgba(255, 255, 255, 0.915);
     overflow: hidden;
     border-radius: 5px 5px 0px 0px;
-    height: 40px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    font-weight: 500;
 
     background-color:rgb(3, 33, 61);
-    width: 250px;
+    width: 300px;
 }
-.chat_body{
-    height: 300px;
-    overflow-y: scroll;
+.chat_body2 {
+    height: 400px;
+   
+    margin: 5px;
 }
+
+
+
+
+
 .chat_footer{
-    position: absolute;
-    /* bottom: 5px; */
-    margin: auto;
-    padding: 10px;
+    
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 .chat_footer input{
     padding: 10px;
-    width: 150px;
+    width: 190px;
     border-radius: 5px;
     border: none;
     background-color: rgb(233, 231, 230);
 }
 .chat_footer button{
     color: white;
-    background-color: green;
+    background-color: rgb(8, 147, 8);
     border: none;
     padding: 9px;
     border-radius: 5px;
-    margin: 0px 7px;
+    /* margin: 0px 7px; */
+}
+
+
+.message_content{
+    margin: 5px 5px 1px 5px;
+    background-color: rgba(9, 100, 198, 0.862);
+   font-size: 13px;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-flex;
+    color: white;
+    
+
+}
+.message_meta{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: left;
+    padding-left: 6px;
+
+}
+
+.time{
+    
+    font-size: 9px;
+    color: gray;
+}
+.name{
+    margin-top: -2px;
+    font-size: 11px;
+    color: rgb(128, 110, 110);
+}
+
+#your_content{
+    background-color: rgba(0, 128, 0, 0.793);
+    justify-content: right;
+    
+}
+#your_message{
+    display: flex;
+    justify-content: right;
+}
+
+#your_meta{
+    justify-content: end;
 }
