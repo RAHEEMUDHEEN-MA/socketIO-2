@@ -1,0 +1,40 @@
+.App {
+  
+
+  height: 100vb;
+  display: flex;
+}
+
+.joinchatContainer{
+  text-align: center;
+  border: solid 1px black;
+  padding: 20px;
+  margin: auto;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(236, 236, 236);
+  border-radius: 15px;
+  border: none;
+}
+.joinchatContainer h2{
+  padding: 15px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.joinchatContainer input{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 20px;
+}
+
+.joinchatContainer button{
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  margin: 20px;
+  color: white;
+}
